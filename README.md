@@ -1,4 +1,5 @@
 
+ # Author
  * Created by Ahmad Shahwaiz on 11/9/2017.
  * Github: https://www.github.com/shahwaiz90
  * LinkedIn: https://www.linkedin.com/in/ahmadshahwaiz/
@@ -10,11 +11,30 @@ Fully customizable, easy to integrate, developer friendly and animated **Emoji F
 ![alt text](https://i.imgflip.com/1z2z2r.gif) 
 
  ## What is it?
-Highly customizable feedback library with interactive emojis. Developers can use this library to get feedback from users about their application or after some specific activity or happy moments. It is designed by keeping in point the user behaviour. 
+Highly customizable feedback library with interactive emojis. Developers can use this library to get feedback from users about their application or after some specific activity or happy moments. It is designed by keeping in point the user behavior. 
+
+ ## How to add this library?
+
+ ### Step 1 Add the JitPack repository to your build file
+
+ Add it in your root build.gradle at the end of repositories:
+ ```xml
+ allprojects {
+		repositories {
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+ ### Step 2 Add the dependency
+ ```xml
+ dependencies {
+	        compile 'com.github.shahwaiz90:AndroidEmojiFeedbackLibrary:1.0'
+ }
+ ```
 		
- ## How Developers can initiate the Call?
+ ### Step 3 How Developers can initiate the Call?
 Developers can utilize this feedback screen and backend logic by writing following commands from their activity class.
-	  
+  ```java
 	/**
 	 *	Make this call from your activity
 	 *  Optional Params (if user wants to change custom messages or handle different locales):
@@ -59,8 +79,8 @@ Developers can utilize this feedback screen and backend logic by writing followi
 		
 		startActivityForResult(intent, 786); 
 	}
- 		
-## What and How to retrieve Objects when user exits the Feedback Screen?
+```	
+### Step 4 What and How to retrieve Objects when user exits the Feedback Screen?
 
 You will receive an ArrayList of Objects which were available in the feedback screen.
 
@@ -69,9 +89,10 @@ You will receive an ArrayList of Objects which were available in the feedback sc
 	3. Error Message isSelected (boolean - true/false)
 	
 A Callback mechanism is developed. You can get your call-back response by writing the following code in that class from which you called startActivityForResult. 
-"feedbackemoji_user_selection" is the variable you are looking for which will be sent to you via serialiazable bundled in intent.
-		
-	 // Write this code in that **same activity** from which you first initiated the call **startActivityForResult**.
+**"feedbackemoji_user_selection"** is the variable you are looking for which will be sent to you via serialiazable bundled in intent.
+
+  ```java
+	// Write this code in that **same activity** from which you first initiated the call **startActivityForResult**.
 	 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -94,3 +115,4 @@ A Callback mechanism is developed. You can get your call-back response by writin
             }
         }
     }
+  ```

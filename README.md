@@ -3,7 +3,7 @@
  * Created by Ahmad Shahwaiz on 11/9/2017.
  * Github: https://www.github.com/shahwaiz90
  * LinkedIn: https://www.linkedin.com/in/ahmadshahwaiz/
- 
+ * BinTray: https://bintray.com/shahwaiz90/EmojiFeedback/AndroidEmojiFeedbackLibrary/
  
  # Android-Emoji-Feedback
 Fully customizable, easy to integrate, developer friendly and animated **Emoji Feedback library** to integrate.

@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="PurpleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_purple_800</item>
+        <item name="colorPrimaryDark">@color/md_purple_900</item>
+        <item name="android:textColor">@color/md_purple_200</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_blue_800</item>
+        <item name="colorPrimaryDark">@color/md_blue_900</item>
+        <item name="android:textColor">@color/md_blue_200</item>
+    </style>
+
+    <style name="IndigoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_indigo_800</item>
+        <item name="colorPrimaryDark">@color/md_indigo_900</item>
+        <item name="android:textColor">@color/md_indigo_200</item>
+    </style>
+
+    <style name="TealTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_teal_800</item>
+        <item name="colorPrimaryDark">@color/md_teal_900</item>
+        <item name="android:textColor">@color/md_teal_200</item>
+    </style>
+
+</resources>

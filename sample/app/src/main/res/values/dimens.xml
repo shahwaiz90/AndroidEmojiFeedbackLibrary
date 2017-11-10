@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="feedback_error_container_width">100dp</dimen>
+    <dimen name="feedback_error_container_height">90dp</dimen>
+    <dimen name="feedback_error_container_margins">10dp</dimen>
+    <dimen name="feedback_error_container_padding">10dp</dimen>
+    <dimen name="feedback_error_container_textsize">15sp</dimen>
+    <dimen name="feedback_emoji_explain_textsize">23sp</dimen>
+    <dimen name="feedback_emoji_reason_textsize">21sp</dimen>
+
+</resources>

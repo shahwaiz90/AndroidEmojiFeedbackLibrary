@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FeedbackEmoji</string>
+    <string name="did_you_enjoy">Did you enjoy this?</string>
+    <string name="skip_this">Skip This</string>
+    <string name="send">Send</string>
+
+    <!--Error Messages-->
+    <string name="confusing">Confusing</string>
+    <string name="notmystyle">Not my style</string>
+    <string name="boring">Boring</string>
+    <string name="slow">Slow</string>
+    <string name="crashes">Crashes</string>
+    <string name="notfunny">Not Funny</string>
+
+    <!--Title Text-->
+    <string name="yourfeedbackmatters">Your feedback matters…</string>
+    <string name="wearesosorry">We are so sorry!</string>
+    <string name="notfeelingiteh">Not feeling it eh?</string>
+    <string name="justkindameh">Just Kinda meh?</string>
+    <string name="notbad">Not Bad....</string>
+    <string name="emojislovely">5 Emojis! Lovely!</string>
+
+    <!-- Error Title-->
+    <string name="whatwentwrong">What went wrong?</string>
+    <string name="whysobad">Why so Bad?</string>
+    <string name="whywasitnotgreat">Why was it not great?</string>
+    <string name="howcanweimprove">How can we improve?</string>
+</resources>

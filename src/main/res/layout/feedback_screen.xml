@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/feedback_colorBackground"
+    android:id="@+id/feedbackScreenBackground"
+    android:layout_height="match_parent"
+    tools:context="github.shahwaiz90.emojifeedback.views.FeedbackScreen">
+
+    <github.shahwaiz90.emojifeedback.views.SnowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        </github.shahwaiz90.emojifeedback.views.SnowView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:id="@+id/rateBarLayout"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/face_a_01"
+            android:id="@+id/mainEmoji" />
+
+        <TextView
+            android:id="@+id/emojiExplain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_yellow_400"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/yourfeedbackmatters"
+            android:textAlignment="center"
+            android:textSize="@dimen/feedback_emoji_explain_textsize" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/firstEmoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/face_b_05"
+                        android:onClick="firstEmoji" />
+
+                    <ImageView
+                        android:id="@+id/secondEmoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/face_b_06"
+                        android:onClick="secondEmoji" />
+
+                    <ImageView
+                        android:id="@+id/thirdEmoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/face_b_11"
+                        android:onClick="thirdEmoji" />
+
+                    <ImageView
+                        android:id="@+id/fourthEmoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/face_b_03"
+                        android:onClick="fourthEmoji" />
+
+                    <ImageView
+                        android:id="@+id/fifthEmoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/face_b_02"
+                        android:onClick="fifthEmoji" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/emojiReason"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/whysobad"
+            android:textColor="@color/md_yellow_400"
+            android:textAlignment="center"
+            android:textSize="@dimen/feedback_emoji_reason_textsize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/rateBarLayout"
+        android:id="@+id/errorMessages"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/firstErrorMessage"
+                android:layout_width="@dimen/feedback_error_container_width"
+                android:layout_height="@dimen/feedback_error_container_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:onClick="firstErrorMessage"
+                android:background="@drawable/feedback_border"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/notfunny"
+                android:padding="@dimen/feedback_error_container_padding"
+                android:textSize="@dimen/feedback_error_container_textsize"
+                android:textColor="@color/feedback_colorBgSelected"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/secondErrorMessage"
+                android:layout_width="@dimen/feedback_error_container_width"
+                android:layout_height="@dimen/feedback_error_container_height"
+                android:layout_marginLeft="@dimen/feedback_error_container_margins"
+                android:onClick="secondErrorMessage"
+                android:layout_marginStart="@dimen/feedback_error_container_margins"
+                android:layout_toEndOf="@+id/firstErrorMessage"
+                android:textStyle="bold"
+                android:padding="@dimen/feedback_error_container_padding"
+                android:layout_toRightOf="@+id/firstErrorMessage"
+                android:background="@drawable/feedback_border"
+                android:textColor="@color/feedback_colorBgSelected"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/crashes"
+                android:textSize="@dimen/feedback_error_container_textsize"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/thirdErrorMessage"
+                android:layout_width="@dimen/feedback_error_container_width"
+                android:layout_height="@dimen/feedback_error_container_height"
+                android:layout_marginLeft="@dimen/feedback_error_container_margins"
+                android:onClick="thirdErrorMessage"
+                android:textStyle="bold"
+                android:padding="@dimen/feedback_error_container_padding"
+                android:textColor="@color/feedback_colorBgSelected"
+                android:layout_marginStart="@dimen/feedback_error_container_margins"
+                android:layout_toEndOf="@+id/secondErrorMessage"
+                android:layout_toRightOf="@+id/secondErrorMessage"
+                android:background="@drawable/feedback_border"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/slow"
+                android:textSize="@dimen/feedback_error_container_textsize"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/errorMessages"
+        android:id="@+id/errorMessagesLayer2"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fourthErrorMessage"
+                android:layout_width="@dimen/feedback_error_container_width"
+                android:onClick="fourthErrorMessage"
+                android:textColor="@color/feedback_colorBgSelected"
+                android:textStyle="bold"
+                android:layout_height="@dimen/feedback_error_container_height"
+                android:padding="@dimen/feedback_error_container_padding"
+                android:background="@drawable/feedback_border"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/boring"
+                android:textSize="@dimen/feedback_error_container_textsize"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/fifthErrorMessage"
+                android:layout_width="@dimen/feedback_error_container_width"
+                android:layout_height="@dimen/feedback_error_container_height"
+                android:layout_marginLeft="@dimen/feedback_error_container_margins"
+                android:layout_marginStart="@dimen/feedback_error_container_margins"
+                android:layout_toEndOf="@+id/fourthErrorMessage"
+                android:onClick="fifthErrorMessage"
+                android:layout_toRightOf="@+id/fourthErrorMessage"
+                android:textColor="@color/feedback_colorBgSelected"
+                android:textStyle="bold"
+                android:padding="@dimen/feedback_error_container_padding"
+                android:background="@drawable/feedback_border"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/notmystyle"
+                android:textSize="@dimen/feedback_error_container_textsize"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/sixthErrorMessage"
+                android:layout_width="@dimen/feedback_error_container_width"
+                android:layout_height="@dimen/feedback_error_container_height"
+                android:onClick="sixthErrorMessage"
+                android:layout_marginLeft="@dimen/feedback_error_container_margins"
+                android:padding="@dimen/feedback_error_container_padding"
+                android:layout_marginStart="@dimen/feedback_error_container_margins"
+                android:textColor="@color/feedback_colorBgSelected"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/fifthErrorMessage"
+                android:layout_toRightOf="@+id/fifthErrorMessage"
+                android:background="@drawable/feedback_border"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/confusing"
+                android:textSize="@dimen/feedback_error_container_textsize"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:onClick="sendButton"
+        android:textColor="@color/feedback_colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/errorMessagesLayer2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

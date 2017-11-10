@@ -6,6 +6,7 @@
  * BinTray: https://bintray.com/shahwaiz90/EmojiFeedback/AndroidEmojiFeedbackLibrary/
  * JitPack: https://jitpack.io/#shahwaiz90/AndroidEmojiFeedbackLibrary/1.0
  * YouTube Demo Video: https://www.youtube.com/watch?v=t39Bg_1dQ7I
+ * Graphics Credit: https://www.linkedin.com/in/kazim-ali-rajput-044ba374/
  
  # Android-Emoji-Feedback
 Fully customizable, easy to integrate, developer friendly and animated **Emoji Feedback library** to integrate.

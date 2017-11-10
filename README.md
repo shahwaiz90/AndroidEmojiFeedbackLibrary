@@ -4,6 +4,8 @@
  * Github: https://www.github.com/shahwaiz90
  * LinkedIn: https://www.linkedin.com/in/ahmadshahwaiz/
  * BinTray: https://bintray.com/shahwaiz90/EmojiFeedback/AndroidEmojiFeedbackLibrary/
+ * JitPack: https://jitpack.io/#shahwaiz90/AndroidEmojiFeedbackLibrary/1.0
+ * YouTube Demo Video: https://www.youtube.com/watch?v=t39Bg_1dQ7I
  
  # Android-Emoji-Feedback
 Fully customizable, easy to integrate, developer friendly and animated **Emoji Feedback library** to integrate.
@@ -11,7 +13,7 @@ Fully customizable, easy to integrate, developer friendly and animated **Emoji F
 ![alt text](https://i.imgflip.com/1z2z2r.gif) 
 
  ## What is it?
-Highly customizable feedback library with interactive emojis. Developers can use this library to get feedback from users about their application or after some specific activity or happy moments. It is designed by keeping in point the user behavior. 
+Highly customizable feedback library with interactive emojis. Developers can use this library to get feedback from users about their application or after some specific activity or happy moments.
 
  ## How to add this library?
 
@@ -88,7 +90,7 @@ You will receive an ArrayList of Objects which were available in the feedback sc
 	2. Error Message (String - "Lots of bugs")
 	3. Error Message isSelected (boolean - true/false)
 	
-A Callback mechanism is developed. You can get your call-back response by writing the following code in that class from which you called startActivityForResult. 
+A Callback mechanism is developed. You can get your call-back response by writing the following code in that class from which you called startActivityForResult.   
 **"feedbackemoji_user_selection"** is the variable you are looking for which will be sent to you via serialiazable bundled in intent.
 
   ```java
@@ -115,4 +117,15 @@ A Callback mechanism is developed. You can get your call-back response by writin
             }
         }
     }
+  ```
+  ## How to change the colors of Feedback Screen?
+  Colors are managed from variables present in color.xml (library's colors.xml). If you want to change the theme or change some colors you can override them by using **those** variables in **your** app's colors.xml file.  
+  Following are variables which are being used in the library's colors.xml file.
+  ```xml  
+   <color name="feedback_colorPrimary">@color/md_red_700</color> <!-- Highlighted Color When clicked on Error Message and button Text Color -->
+    <color name="feedback_colorPrimaryDark">@color/md_blue_grey_900</color>
+    <color name="feedback_colorBackground">@color/md_blue_grey_900</color> <!-- Background Color of the Screen-->
+    <color name="feedback_colorBgSelected">@color/md_blue_grey_200</color> <!-- Color of Text-->
+    <color name="feedback_navigationBarColor">#000000</color>
+    <color name="feedback_colorAccent">#c8e8ff</color>
   ```

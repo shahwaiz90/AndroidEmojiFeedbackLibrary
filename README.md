@@ -3,6 +3,7 @@
  * Created by Ahmad Shahwaiz on 11/9/2017.
  * Github: https://www.github.com/shahwaiz90
  * LinkedIn: https://www.linkedin.com/in/ahmadshahwaiz/
+ * Angel Profile Portfolio: https://angel.co/projects/644299-androidemojifeedbacklibrary
  * BinTray: https://bintray.com/shahwaiz90/EmojiFeedback/AndroidEmojiFeedbackLibrary/
  * JitPack: https://jitpack.io/#shahwaiz90/AndroidEmojiFeedbackLibrary/1.0
  * YouTube Demo Video: https://www.youtube.com/watch?v=t39Bg_1dQ7I
